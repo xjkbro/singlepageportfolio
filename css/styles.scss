@@ -1,0 +1,120 @@
+//=================================
+// Variables
+//=================================
+
+$color-primary: white;
+
+$color-secondary: #948C75;
+// $color-pale: #D9CEB2;
+$color-pale: white;
+$color-mid: #99B2B7;
+$color-dark: #7A6A53;
+$color-teal:  #17A2B8;
+$color-black-transparent: rgba(0, 0, 0, 0.5);
+
+$body-font: "Montserrat", sans-serif;
+$header-font: "Poiret One";
+
+
+body {
+    background-color: $color-primary;
+    font-family: $body-font;
+}
+
+h1, h2, h3 {
+    font-family: $header-font;
+    color: $color-dark;
+}
+#logo {
+    height: 40px; 
+    vertical-align: unset; 
+    margin-left: 10px;
+}
+
+a:hover {
+    color: grey
+}
+a {
+    color: $color-dark;
+}
+header {
+    h2 {
+    color: $color-pale;
+    }
+    div {
+        div {
+            div { 
+                a {
+                    color: $color-dark;
+                    font-weight: bold;
+                }
+                a:hover {
+                    color: grey
+                }
+            }
+        }
+    }
+}
+
+.site-footer {
+    background-image: linear-gradient($color-pale,white);
+    padding: 20px 0;
+}
+
+.jumbotron {
+    padding: 20px;
+    background-color: $color-pale;
+    color: white;
+    margin: 0;
+}
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+
+}
+
+.carousel-caption {
+    background-color: $color-black-transparent;
+}
+
+
+#carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
+.img-thumb {
+    padding: .25rem;
+    border-radius: .25rem;
+    max-width: 100%;
+    height: auto;
+}
+.gallery-img {
+    height: 400px; 
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: auto;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(63, 63, 63, 0.425);
+  }
+  
+.overlay:hover {
+    opacity: 1;
+}
+.pt-100 {
+    padding-top: 100px;
+}
+#mainheader {
+    background-color: $color-secondary;
+}
